@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02ac662e-94b6-4c0c-afe4-e8289fa234fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0002_studentassessment_student_id.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0003_auto_20170715_2212.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0002_login.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0003_auto_20170715_1913.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0004_auto_20170715_1914.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0005_auto_20170715_1925.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0006_auto_20170715_1934.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/index.html" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/db.sqlite3" afterPath="$PROJECT_DIR$/learningcurve/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/admin.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/models.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/urls.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/views.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/views.py" />
-    </list>
+    <list default="true" id="02ac662e-94b6-4c0c-afe4-e8289fa234fc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -178,8 +162,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="x" value="992" />
+    <option name="y" value="281" />
     <option name="width" value="928" />
     <option name="height" value="1056" />
   </component>
@@ -403,7 +387,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="928" height="1056" extended-state="4" />
+    <frame x="992" y="281" width="928" height="1056" extended-state="1" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494331" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
