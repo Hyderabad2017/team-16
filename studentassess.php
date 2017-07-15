@@ -201,7 +201,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Student Assessment form</a>
+      <a class="navbar-brand" href="#myPage">Student Assessment Form</a>
     </div>
 	<div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -230,29 +230,28 @@
 	  <form>
         <td>Interacting With Others</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
-		</td>
+		
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		</form>
       </tr>
@@ -260,29 +259,29 @@
 	  <form>
         <td>Overcoming difficulties and solving problems</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 	  </form> 
         
@@ -291,29 +290,29 @@
 	  <form>
         <td>Taking initiative</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		</form>
    
@@ -322,29 +321,29 @@
 	  <form>
         <td>Managing conflict</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+			</td>
+		
+		<td>
+		
+			<input type="radio" name="optradio">
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
-		</td>
-		<td>
-		<label class="radio-inline">
-			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		</form>
    
@@ -353,29 +352,29 @@
 	  <form>
         <td>Understanding and following instrucions</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		</form>
    
@@ -384,29 +383,29 @@
 	  <form>
         <td>overall score</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		<td>
-		<label class="radio-inline">
+		
 			<input type="radio" name="optradio">
-		</label>
+		
 		</td>
 		</form>
    
