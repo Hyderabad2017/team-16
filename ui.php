@@ -205,10 +205,70 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><Button class="btn navbar-btn" name="About">ABOUT</button>&nbsp</li>&nbsp;
-        <li><Button class="btn navbar-btn" name="Admin">ADMIN</button>&nbsp</li>&nbsp;
-        <li><Button class="btn navbar-btn" name="Teacher">TEACHER</button>&nbsp</li>&nbsp;
-        <li><Button class="btn navbar-btn" name="Contact">CONTACT</button>&nbsp</li>&nbsp;
+	  
+ <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Admin Login</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Admin Login</h4>
+        </div>
+        <div class="modal-body">
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="text" name="password" required>
+			</div>
+			<div class="input-group">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
+			</div>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>    
+    </div>
+  </div>	
+  
+  	  
+ <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher Login</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Teacher Login</h4>
+        </div>
+        <div class="modal-body">
+			<div class="input-group">
+				<label>Username</label>
+				<input type="text" name="username" required>
+			</div>
+			<div class="input-group">
+				<label>Password</label>
+				<input type="text" name="password" required>
+			</div>
+			<div class="input-group">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
+			</div>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>    
+    </div>
+  </div>	
+  
+    
+	
       </ul>
     </div>
   </div>
@@ -226,3 +286,6 @@
     </div>
   </form>
 </div>
+</body>
+
+</html>
