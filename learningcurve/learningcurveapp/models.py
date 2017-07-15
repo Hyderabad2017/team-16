@@ -3,6 +3,11 @@ from __future__ import unicode_literals
 from django.db import models
 
 
+class Login(models.Model):
+    username = models.CharField(max_length=20)
+    password = models.CharField(max_length=20)
+
+
 class Student(models.Model):
     CHOICES = (
         ('Both Parents', 'Both Parents'),
@@ -47,7 +52,6 @@ class Teacher(models.Model):
     aadhar_id = models.IntegerField()
     age = models.IntegerField()
     gender = models.CharField(max_length=25, choices=CHOICES)
-
 
 # class SchoolStudent(models.Model):
 #     school = models.ForeignKey(School)
