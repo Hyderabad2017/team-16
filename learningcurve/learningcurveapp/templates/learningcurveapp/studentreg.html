@@ -187,6 +187,10 @@
         font-size: 150px;
     }
   }
+  .text
+  {
+	  color:black;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -205,70 +209,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-	  
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Admin Login</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Admin Login</h4>
-        </div>
-        <div class="modal-body">
-			<div class="input-group">
-				<label>Username</label>
-				<input type="text" name="username" required>
-			</div>
-			<div class="input-group">
-				<label>Password</label>
-				<input type="text" name="password" required>
-			</div>
-			<div class="input-group">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
-			</div>
-		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>    
-    </div>
-  </div>	
-  
-  	  
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher Login</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Teacher Login</h4>
-        </div>
-	<form method="post" action="http://127.0.0.1:8080/learningcurveapp">
-        <div class="modal-body">
-			<div class="input-group">
-				<label>Username</label>
-				<input type="text" name="username" required>
-			</div>
-			<div class="input-group">
-				<label>Password</label>
-				<input type="text" name="password" required>
-			</div>
-		</div>
-        <div class="modal-footer">
-				<input type="submit" class="btn btn-default" data-dismiss="modal">		
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>    
-    </div>
-	</form>
-  </div>	
-  
-    
-	
+        <li><Button class="btn navbar-btn" name="About">ABOUT</button>&nbsp</li>&nbsp;
+        <li><Button class="btn navbar-btn" name="Admin">ADMIN</button>&nbsp</li>&nbsp;
+        <li><Button class="btn navbar-btn" name="Teacher">TEACHER</button>&nbsp</li>&nbsp;
+        <li><Button class="btn navbar-btn" name="Contact">CONTACT</button>&nbsp</li>&nbsp;
       </ul>
     </div>
   </div>
@@ -277,16 +221,72 @@
 <div class="jumbotron text-center">
   <h1>LEARNING CURVE</h1> 
   <p>Life Skills Foundation</p> 
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="30" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Join Us</button>
-		<img src="download.png" align="left" />
-      </div>
-    </div>
+  <p>Student Registration</p>
+  <form class="text">
+	<div>
+	<label>Student Id</label>
+		<input type="text" name="studentid">
+		</div>
+		
+		<div>
+	<label>Name of Student</label>
+		<input type="text" name="studentname">
+		</div>
+		
+		
+	<div>
+	<label>Gender</label>	
+	<select name="gender" class="text">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>
+	</div>
+		
+		
+		<div>
+	<label>Age</label>
+		<input type="number" name="age">
+		</div>
+
+		<div>
+	<label>Family Type</label>	
+	<select name="familytype" class="text">
+		<option value="Both">Both Parents</option>
+		<option value="single">Single parent</option>
+		<option value="orphan">Orphan</option>
+	</select>
+	</div>
+		
+		<div>
+	<label>Siblings</label>
+		<input type="number" name="siblings">
+		</div>
+		
+		
+	<div>
+	<label>Order Of Birth</label>	
+	<select name="order of birth" class="text">
+		<option value="first born">First born</option>
+		<option value="second born">Second Born</option>
+		<option value="later">later born</option>
+	</select>
+	</div>
+		
+	<div>
+	<label>Parent Education</label>	
+	<select name="parentedu" class="text">
+		<option value="primary">Primary</option>
+		<option value="secondary">Secondary</option>
+		<option value="higher">Higher Secondary</option>
+		<option value="higher">None</option>
+	</select>
+	</div>
+		
+		<div>
+	<label>FamilyIncome</label>
+		<input type="number_format" name="income">
+		</div>
+	
   </form>
 </div>
-</body>
-
 </html>

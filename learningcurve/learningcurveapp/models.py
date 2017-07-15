@@ -3,6 +3,11 @@ from __future__ import unicode_literals
 from django.db import models
 
 
+class Login(models.Model):
+    username = models.CharField(max_length=20)
+    password = models.CharField(max_length=20)
+
+
 class Student(models.Model):
     CHOICES = (
         ('Both Parents', 'Both Parents'),
@@ -31,6 +36,8 @@ class Student(models.Model):
 
     def __unicode__(self):
         return unicode(self.name)
+
+
 # class School(models.Model):
 #     class_level = models.IntegerField(unique=True)
 #     teacher = models.ForeignKey()
@@ -44,8 +51,7 @@ class Teacher(models.Model):
     name = models.CharField(max_length=30)
     aadhar_id = models.IntegerField()
     age = models.IntegerField()
-    gender = models.CharField(max_length=25,choices=CHOICES)
-
+    gender = models.CharField(max_length=25, choices=CHOICES)
 
 # class SchoolStudent(models.Model):
 #     school = models.ForeignKey(School)
@@ -60,12 +66,3 @@ class Teacher(models.Model):
 # class Master(models.Model):
 #     name = models.CharField()
 #     schools = models.ForeignKey()
-
-class ChildAssesment(models.Models):
-	student_aadhar_id=models.CharField(max_length=30)
-	Year=models.IntegerField()
-	Interacting_with_others=models.IntegerField()
-	Overcoming_difficulties_and_problem_solving=models.IntegerField()
-	Taking_initiative=models.IntegerField()
-	Managing_conflict=models.IntegerField()
-	Understanding_and _following_instructions=models.IntegerField()

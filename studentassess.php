@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>LEARNING CURVE</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Learning Curve</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -172,7 +173,7 @@
       -webkit-transform: translateY(0%);
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
@@ -187,6 +188,7 @@
         font-size: 150px;
     }
   }
+ 
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -199,94 +201,264 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-	  <a href="http://learning-curve-foundation.org">
-	  <img src="learningcurve2.png"/>
-	  </a>
+      <a class="navbar-brand" href="#myPage">Student Assessment Form</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+	<div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-	  
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Admin Login</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Admin Login</h4>
-        </div>
-        <div class="modal-body">
-			<div class="input-group">
-				<label>Username</label>
-				<input type="text" name="username" required>
-			</div>
-			<div class="input-group">
-				<label>Password</label>
-				<input type="text" name="password" required>
-			</div>
-			<div class="input-group">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
-			</div>
-		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>    
+	  <li> <a href="#">Studentname</a></li>
+	  <li><a href="#">Student class</a></li>
+	  </ul>
     </div>
-  </div>	
-  
-  	  
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher Login</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Teacher Login</h4>
-        </div>
-	<form method="post" action="http://127.0.0.1:8080/learningcurveapp">
-        <div class="modal-body">
-			<div class="input-group">
-				<label>Username</label>
-				<input type="text" name="username" required>
-			</div>
-			<div class="input-group">
-				<label>Password</label>
-				<input type="text" name="password" required>
-			</div>
-		</div>
-        <div class="modal-footer">
-				<input type="submit" class="btn btn-default" data-dismiss="modal">		
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>    
-    </div>
-	</form>
-  </div>	
-  
-    
-	
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron text-center">
-  <h1>LEARNING CURVE</h1> 
-  <p>Life Skills Foundation</p> 
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="30" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Join Us</button>
-		<img src="download.png" align="left" />
-      </div>
-    </div>
-  </form>
+	</div>
+	</nav>
+	<br><br>
+	<div class="container">
+            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Does not yet do</th>
+        <th>Does with a lot of help</th>
+		<th>Does with some help</th>
+		<th>Does with a little help</th>
+		<th>Does independently</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	  <form>
+        <td>Interacting With Others</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		</form>
+      </tr>
+      <tr>
+	  <form>
+        <td>Overcoming difficulties and solving problems</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+	  </form> 
+        
+      </tr>
+      <tr>
+	  <form>
+        <td>Taking initiative</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		</form>
+   
+      </tr>
+	  <tr>
+	  <form>
+        <td>Managing conflict</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+			</td>
+		
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		</form>
+   
+      </tr>	
+	  <tr>
+	  <form>
+        <td>Understanding and following instrucions</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		</form>
+   
+      </tr>
+	  <tr>
+	  <form>
+        <td>overall score</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		<td>
+		
+			<input type="radio" name="optradio">
+		
+		</td>
+		</form>
+   
+      </tr>
+    </tbody>
+  </table>
+	<div class="input-group">
+		<button type="submit" name="submit" class="butn" onclick="buttonsubmit()">Submit</button>
+	</div>
 </div>
-</body>
 
+	
+<script>
+function buttonreg()
+{
+	window.location="#";
+}
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
 </html>
