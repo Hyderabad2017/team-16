@@ -61,3 +61,11 @@ class Teacher(models.Model):
 #     name = models.CharField()
 #     schools = models.ForeignKey()
 
+class ChildAssesment(models.Models):
+	student_aadhar_id=models.CharField(max_length=30)
+	Year=models.IntegerField()
+	Interacting_with_others=models.IntegerField()
+	Overcoming_difficulties_and_problem_solving=models.IntegerField()
+	Taking_initiative=models.IntegerField()
+	Managing_conflict=models.IntegerField()
+	Understanding_and _following_instructions=models.IntegerField()
