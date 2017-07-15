@@ -7,6 +7,9 @@ class Login(models.Model):
     username = models.CharField(max_length=20)
     password = models.CharField(max_length=20)
 
+    class Meta():
+        unique_together = (("username", "password"))
+
 
 class Student(models.Model):
     CHOICES = (
@@ -62,6 +65,7 @@ class Teacher(models.Model):
     def __unicode__(self):
         return unicode(self.name)
 
+
 # class SchoolStudent(models.Model):
 #     school = models.ForeignKey(School)
 #     student = models.ForeignKey(Student)
@@ -88,14 +92,26 @@ class Master(models.Model):
     name = models.CharField(max_length=30)
     age = models.IntegerField()
     gender = models.CharField(max_length=20, choices=CHOICES)
-    schools=models.ForeignKey(School)
+    schools = models.ForeignKey(School)
 
     def __unicode__(self):
         return unicode(self.name)
 
+
 class TeacherStudent(models.Model):
-    teacher=models.ForeignKey(Teacher)
-    student=models.ForeignKey(Student)
+    teacher = models.ForeignKey(Teacher)
+    student = models.ForeignKey(Student)
 
     class Meta():
-        unique_together = (("teacher","student"))
+        unique_together = (("teacher", "student"))
+
+
+class StudentAssessment(models.Model):
+    student_id = models.IntegerField()
+    q1 = models.IntegerField()
+    q2 = models.IntegerField()
+    q3 = models.IntegerField()
+    q4 = models.IntegerField()
+    q5 = models.IntegerField()
+    q6 = models.IntegerField()
+
