@@ -188,13 +188,14 @@
         font-size: 150px;
     }
   }
+
+
  
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -203,18 +204,26 @@
       </button>
       <a class="navbar-brand" href="#myPage">ADMIN</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      
-        
-        <div><a href="#about">PROFILE</a></div>
+</nav>
+<div class="container"> 
+	<div style="color: #fff;padding-top:100px">
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-2">
+			<button type="button" class="btn btn-info btn-lg">PROFILE</button>
+		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-2" style="color:black">	
 		
-		<div><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Student</button>
 
-		<div class="modal fade" id="myModal" role="dialog">
+
+		</div>
+				<div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
+      <div class="modal-content" style="color:black">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Login</h4>
@@ -282,30 +291,23 @@
 		<div>
 	<label>FamilyIncome</label>
 		<input type="number_format" name="income">
-		</div>			
+		</div>
+		
 		</div>
         <div class="modal-footer">
-		  <button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		         <button type="button" class="btn btn-default" onclick="buttonlogin()" >login</button>
+
+		            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
       
     </div>
   </div>
-  </li>
+		<div class="col-sm-1"></div>
+	<div class="col-sm-2" style="color:black">
+		  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Teacher</button>
 
-		<div><a href="#about">Student</a></div>
-
-		<div>
-		
-  
-  <!-- Trigger the modal with a button -->
-
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Student</button>
-
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
-
-		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal fade" id="myModal2" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -334,66 +336,42 @@
 			<div class="input-group">
 				<label>Contact</label>
 				<input type="number" name="contact" required>
-			</div>			
+			</div>
+			<div class="input-group">
+				<button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
+			</div>
+			
 		</div>
         <div class="modal-footer">
-		 <button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
+		
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
       
     </div>
   </div>
-  
-  </li>
-  
-		<li><a href="#classess">Classroom Assessment</a></li>
-        <li><a href="#final">Final Reports</a></li>
-       
-      </ul>
-    </div>
-  </div>
-  
-</nav>
+	
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-2">
+				<button type="button" class="btn btn-info btn-lg">Classroom Assessment</button>
+			</div>
+			<div class="col-sm-2"></div>
+            <div class="col-sm-2">
+				<button type="button" class="btn btn-info btn-lg">Final Reports</button>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+ </div> 
 <div class="jumbotron text-center">
   <h1>LEARNING CURVE</h1> 
   <h3>Life Skills Foundation</h3> 
   <p>ADMIN PAGE</p>
 </div>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
 
 </body>
 </html>
