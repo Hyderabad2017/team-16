@@ -1,8 +1,9 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>LEARNING CURVE</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,7 +30,7 @@
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }
+  }  
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
@@ -81,7 +82,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e;
+      border: 1px solid #f4511e; 
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -123,8 +124,8 @@
       background-color: #f4511e;
       z-index: 9999;
       border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
+      font-size: 10px !important;
+      line-height: 1.0000000 !important;
       letter-spacing: 4px;
       border-radius: 0;
       font-family: Montserrat, sans-serif;
@@ -157,7 +158,7 @@
     0% {
       opacity: 0;
       transform: translateY(70%);
-    }
+    } 
     100% {
       opacity: 1;
       transform: translateY(0%);
@@ -167,7 +168,7 @@
     0% {
       opacity: 0;
       -webkit-transform: translateY(70%);
-    }
+    } 
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -198,99 +199,96 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
-	  <a href="http://learning-curve-foundation.org">
-	  <img src="learningcurve2.png"/>
-	  </a>
+      <a class="navbar-brand" href="#myPage">Teacher</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Admin Login</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Admin Login</h4>
-        </div>
-        <div class="modal-body">
-            <form action="http://127.0.0.1:9000/learningcurveapp/adminlogin" method="post">
-			<div class="input-group">
-				<label>Username</label>
-				<input type="text" name="username" required>
-			</div>
-			<div class="input-group">
-				<label>Password</label>
-				<input type="password" name="password" required>
-			</div>
-                <input type="submit" value="login">
-            </form>
-			</div>
-
-		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher Login</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Teacher Login</h4>
-        </div>
-        <div class="modal-body">
-            <form method="post" action="http://127.0.0.1:9000/learningcurveapp/teacherlogin">
-			<div class="input-group">
-				<label>Username</label>
-				<input type="text" name="username" required>
-			</div>
-			<div class="input-group">
-				<label>Password</label>
-				<input type="password" name="password" required>
-			</div>
-            <input type="submit" value="login">
-            </form>
-		</div>
-        <div class="modal-footer">
-				<input type="submit" class="btn btn-default" data-dismiss="modal">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-	</form>
-  </div>
-
-
-
-      </ul>
     </div>
   </div>
 </nav>
+<br>
+<br>
+<br>
 
-<div class="jumbotron text-center">
-  <h1>LEARNING CURVE</h1>
-  <p>Life Skills Foundation</p>
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="30" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Join Us</button>
+
+
+
+<h2 align="center">Lets brighten their future!!</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"To the world you may be just a hero but to your students you are hero!!</h4>
+      </div>
+      <div class="item">
+        <h4>Teaching is the greatest act of optimism</h4>
+      </div>
+      <div class="item">
+        <h4>The best teachers teach from the heart not from the book!</h4>
       </div>
     </div>
-  </form>
-</div>
-</body>
 
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+<h3 align="center" style="color:black">Fill student assessment form here!</h3>
+<br>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Student Assessment Form</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Enter Student ID</h4>
+        </div>
+        <div class="modal-body">
+			<div class="input-group">
+				
+				<input type="text" name="username" required>
+			</div>
+			<div class="input-group" align="center">
+				<button type="submit" name="login" class="butn" onclick="buttongo()" align="center">GO</button>
+			</div>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<script>
+function buttongo()
+{
+	window.location="#";
+}
+</script>
+
+</body>
 </html>
+
