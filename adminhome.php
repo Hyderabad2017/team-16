@@ -188,6 +188,7 @@
         font-size: 150px;
     }
   }
+ 
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -204,14 +205,69 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        
         <li><a href="#about">PROFILE</a></li>
-        <li><a href="#studreg">Student Registration</a></li>
-        <li><a href="#classassess">Classroom Assessment</a></li>
+		
+		<li><a href="#about">Student</a></li>
+		<li>
+		
+  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+
+		<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+			<div class="input-group">
+				<label>Full Name</label>
+				<input type="text" name="username" required>
+			</div>
+			<div class="input-group">
+				<label>Age</label>
+				<input type="number" name="age" required>
+			</div>
+			<div class="input-group">
+				<label>Address</label>
+				<input type="text" name="address" required>
+			</div>
+			<div class="input-group">
+				<label>School</label>
+				<input type="text" name="school" required>
+			</div>
+			<div class="input-group">
+				<label>Contact</label>
+				<input type="number" name="contact" required>
+			</div>
+			<div class="input-group">
+				<button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
+			</div>
+			
+		</div>
+        <div class="modal-footer">
+		
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  </li>
+  
+		<li><a href="#classess">Classroom Assessment</a></li>
         <li><a href="#final">Final Reports</a></li>
        
       </ul>
     </div>
   </div>
+  
 </nav>
 <div class="jumbotron text-center">
   <h1>LEARNING CURVE</h1> 
