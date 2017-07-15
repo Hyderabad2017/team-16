@@ -191,7 +191,7 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:black; height: 40px;">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -199,68 +199,70 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-	  <a href="http://learning-curve-foundation.org">
-	  <img src="learningcurve2.png"/>
-	  </a>
+	       <a class="navbar-brand" href="#myPage">LEARNING CURVE</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
 	  
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Admin Login</button>
+ <button type="button" class="btn btn-info btn-lg" style="background-color:black" data-toggle="modal" data-target="#myModal">Admin Login</button>
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Admin Login</h4>
         </div>
         <div class="modal-body">
+			   <div class="col-sm-3"></div>
+		<div class="col-sm-3">
+			<label>Username</label></br>
+			<label>Password</label></br>
+		</div>
 			<div class="input-group">
-				<label>Username</label>
 				<input type="text" name="username" required>
 			</div>
 			<div class="input-group">
-				<label>Password</label>
 				<input type="password" name="password" required>
 			</div>
-			<div class="input-group">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
-			</div>
 		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="modal-footer" >
+		<center><button type="button" class="btn btn-default" data-dismiss="modal">Login</button></center>
         </div>
       </div>    
     </div>
   </div>	
   
   	  
- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher Login</button>
+ <button type="button" class="btn btn-info btn-lg" style="background-color:black" data-toggle="modal" data-target="#myModal2">Teacher Login</button>
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="myModal2" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
+		
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Teacher Login</h4>
         </div>
 	<form method="post" action="http://127.0.0.1:8080/learningcurveapp">
-        <div class="modal-body">
-			<div class="input-group">
-				<label>Username</label>
+       <div class="modal-body">
+	   <div class="col-sm-3"></div>
+		<div class="col-sm-3">
+			<label>Username</label></br>
+			<label>Password</label></br>
+		</div>
+			<div class="input-group">	
 				<input type="text" name="username" required>
 			</div>
 			<div class="input-group">
-				<label>Password</label>
+				
 				<input type="text" name="password" required>
 			</div>
 		</div>
         <div class="modal-footer">
-				<input type="submit" class="btn btn-default" data-dismiss="modal">		
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<center><button type="button" class="btn btn-default" data-dismiss="modal">login</button></center>		
         </div>
       </div>    
     </div>
@@ -279,7 +281,7 @@
   <p>Life Skills Foundation</p> 
   <form>
     <div class="input-group">
-        <img src="learningcurve2.png" align="bottom" height="390" width="570">
+        <img src="download.png" align="bottom" height="390" width="570">
       <input type="email" class="text" align="right"size="50" placeholder="Email Address" required>
         <button type="button" align="right" class="btn btn-danger">Join Us</button>
 		
