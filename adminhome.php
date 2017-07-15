@@ -204,11 +204,11 @@
       <a class="navbar-brand" href="#myPage">ADMIN</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+      
         
-        <li><a href="#about">PROFILE</a></li>
+        <div><a href="#about">PROFILE</a></div>
 		
-		<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+		<div><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
 
 		<div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -282,14 +282,10 @@
 		<div>
 	<label>FamilyIncome</label>
 		<input type="number_format" name="income">
-		</div>
-			<div class="input-group">
-				<button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
-			</div>
-			
+		</div>			
 		</div>
         <div class="modal-footer">
-		
+		  <button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
@@ -298,9 +294,9 @@
   </div>
   </li>
 
-		<li><a href="#about">Student</a></li>
+		<div><a href="#about">Student</a></div>
 
-		<li>
+		<div>
 		
   
   <!-- Trigger the modal with a button -->
@@ -338,14 +334,10 @@
 			<div class="input-group">
 				<label>Contact</label>
 				<input type="number" name="contact" required>
-			</div>
-			<div class="input-group">
-				<button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
-			</div>
-			
+			</div>			
 		</div>
         <div class="modal-footer">
-		
+		 <button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
