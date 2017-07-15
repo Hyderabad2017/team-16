@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02ac662e-94b6-4c0c-afe4-e8289fa234fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/db.sqlite3" afterPath="$PROJECT_DIR$/learningcurve/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/admin.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/models.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/adminlogin.html" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/adminlogin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/classroom_assess.html" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/classroom_assess.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/urls.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningcurve/learningcurveapp/views.py" afterPath="$PROJECT_DIR$/learningcurve/learningcurveapp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui.php" afterPath="$PROJECT_DIR$/ui.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learningcurve/learningcurveapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="95" column="6" lean-forward="false" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
+            <state relative-caret-position="460">
+              <caret line="100" column="49" lean-forward="true" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -28,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learningcurve/learningcurveapp/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -73,8 +76,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learningcurve/learningcurveapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="288">
+              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -158,9 +161,9 @@
         <option value="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/sample.html" />
         <option value="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/index.html" />
         <option value="$PROJECT_DIR$/learningcurve/learningcurveapp/templates/learningcurveapp/adminlogin.html" />
-        <option value="$PROJECT_DIR$/learningcurve/learningcurveapp/views.py" />
         <option value="$PROJECT_DIR$/learningcurve/learningcurveapp/admin.py" />
         <option value="$PROJECT_DIR$/learningcurve/learningcurveapp/models.py" />
+        <option value="$PROJECT_DIR$/learningcurve/learningcurveapp/views.py" />
       </list>
     </option>
   </component>
@@ -519,10 +522,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/learningcurve/learningcurveapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="100" column="49" lean-forward="true" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/learningcurve/learningcurveapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="288">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -535,16 +548,6 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learningcurve/learningcurveapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="95" column="6" lean-forward="false" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

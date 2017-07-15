@@ -93,4 +93,9 @@ class Master(models.Model):
     def __unicode__(self):
         return unicode(self.name)
 
-class
+class TeacherStudent(models.Model):
+    teacher=models.ForeignKey(Teacher)
+    student=models.ForeignKey(Student)
+
+    class Meta():
+        unique_together = (("teacher","student"))

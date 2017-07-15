@@ -223,7 +223,7 @@
 			</div>
 			<div class="input-group">
 				<label>Password</label>
-				<input type="text" name="password" required>
+				<input type="password" name="password" required>
 			</div>
 			<div class="input-group">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
