@@ -252,7 +252,7 @@
 <h3 align="center" style="color:black">Fill student assessment form here!</h3>
 <br>
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Student Assessment Form</button>
+  <center><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Student Assessment Form</button></center>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
