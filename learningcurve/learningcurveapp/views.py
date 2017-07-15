@@ -7,3 +7,7 @@ from django.template import Context, loader
 def index(request):
     template = loader.get_template("learningcurveapp/adminlogin.html")
     return HttpResponse(template.render())
+
+def adminlogin(request):
+    template = loader.get_template("learningcurveapp/adminlogin.html")
+    return HttpResponse(template.render())
