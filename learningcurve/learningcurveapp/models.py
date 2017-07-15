@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 from django.db import models
 
 
@@ -27,11 +29,11 @@ class Student(models.Model):
     parent_education_level = models.CharField(max_length=20, choices=EDUCATION_CHOICES)
     family_income = models.FloatField()
 
-
-class School(models.Model):
-    class_level = models.IntegerField(unique=True)
-    students = models.ForeignKey()
-    teacher = models.ForeignKey()
+    def __unicode__(self):
+        return unicode(self.name)
+# class School(models.Model):
+#     class_level = models.IntegerField(unique=True)
+#     teacher = models.ForeignKey()
 
 
 class Teacher(models.Model):
@@ -42,19 +44,20 @@ class Teacher(models.Model):
     name = models.CharField(max_length=30)
     aadhar_id = models.IntegerField()
     age = models.IntegerField()
-    gender = models.CharField(choices=CHOICES)
+    gender = models.CharField(max_length=25,choices=CHOICES)
 
 
-class SchoolStudent(models.Model):
-    school = models.ForeignKey(School)
-    student = models.ForeignKey(Student)
+# class SchoolStudent(models.Model):
+#     school = models.ForeignKey(School)
+#     student = models.ForeignKey(Student)
+#
+#
+# class TeacherStudent(models.Model):
+#     teacher_aadhar_id = models.IntegerField()
+#     students = models.ForeignKey(Student)
+#
+#
+# class Master(models.Model):
+#     name = models.CharField()
+#     schools = models.ForeignKey()
 
-
-class TeacherStudent(models.Model):
-    teacher_aadhar_id = models.IntegerField()
-    students = models.ForeignKey(Student)
-
-
-class Master(models.Model):
-    name = models.CharField()
-    schools = models.ForeignKey()
