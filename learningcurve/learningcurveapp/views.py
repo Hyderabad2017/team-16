@@ -11,3 +11,7 @@ def index(request):
 def adminlogin(request):
     template = loader.get_template("learningcurveapp/adminlogin.html")
     return HttpResponse(template.render())
+
+def classassessment(request):
+    template = loader.get_template("learningcurveapp/classroom_assess.html")
+    return HttpResponse()
