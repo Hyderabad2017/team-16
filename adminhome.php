@@ -297,11 +297,17 @@
     </div>
   </div>
   </li>
+
+		<li><a href="#about">Student</a></li>
+
 		<li>
 		
   
   <!-- Trigger the modal with a button -->
+
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Student</button>
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
 
 		<div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
