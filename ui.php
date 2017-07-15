@@ -256,11 +256,9 @@
 				<label>Password</label>
 				<input type="text" name="password" required>
 			</div>
-			<div class="input-group">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
-			</div>
 		</div>
         <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Login</button>			
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>    
