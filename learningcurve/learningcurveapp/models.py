@@ -40,7 +40,7 @@ class Student(models.Model):
     family_income = models.FloatField()
 
     def __unicode__(self):
-        return unicode(self.name)
+        return unicode(self.aadhar_id)
 
 
 # class School(models.Model):
@@ -59,6 +59,8 @@ class Teacher(models.Model):
     gender = models.CharField(max_length=25, choices=CHOICES)
     student = models.ForeignKey(Student)
 
+    def __unicode__(self):
+        return unicode(self.name)
 
 # class SchoolStudent(models.Model):
 #     school = models.ForeignKey(School)
@@ -88,3 +90,7 @@ class Master(models.Model):
     gender = models.CharField(max_length=20, choices=CHOICES)
     schools=models.ForeignKey(School)
 
+    def __unicode__(self):
+        return unicode(self.name)
+
+class
