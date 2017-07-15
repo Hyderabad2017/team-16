@@ -279,14 +279,16 @@
   <p>Life Skills Foundation</p> 
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="30" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Join Us</button>
-		<img src="download.png" align="left" />
+        <img src="learningcurve2.png" align="bottom" height="390" width="570">
+      <input type="email" class="text" align="right"size="50" placeholder="Email Address" required>
+        <button type="button" align="right" class="btn btn-danger">Join Us</button>
+		
       </div>
-    </div>
+    
   </form>
-</div>
+    </div>
+
 </body>
 
 </html>
+
