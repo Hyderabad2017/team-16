@@ -280,6 +280,7 @@
       <input type="email" class="form-control" size="30" placeholder="Email Address" required>
       <div class="input-group-btn">
         <button type="button" class="btn btn-danger">Join Us</button>
+		<img src="download.png" align="left" />
       </div>
     </div>
   </form>
