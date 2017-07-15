@@ -1,4 +1,4 @@
-<!DOCTYPE html>
++<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
@@ -220,17 +220,18 @@
           <h4 class="modal-title">Enter Student ID</h4>
         </div>
         <div class="modal-body">
+            <form action="http://127.0.0.1:9000/learningcurveapp/studentassessment" method="post">
 			<div class="input-group">
 				
-				<input type="text" name="username" required>
+				<input type="text" name="id" required>
 			</div>
 			<div class="input-group" align="center">
-				<button type="submit" name="login" class="butn" onclick="buttongo()" align="center">GO</button>
-			</div>
+				<input type="submit" name="login" class="butn"  align="center">
 		</div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
+         </form>
       </div>
       
     </div>
@@ -240,7 +241,7 @@
 <script>
 function buttongo()
 {
-	window.location="#";
+	window.location="http://127.0.0.1:9000/learningcurveapp/studentassessment";
 }
 </script>
 

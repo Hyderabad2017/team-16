@@ -362,7 +362,7 @@
 			</div>
 			<div class="col-sm-2"></div>
             <div class="col-sm-2">
-				<button type="button" class="btn btn-info btn-lg">Final Reports</button>
+				<button type="button" onclick="myfunc()" class="btn btn-info btn-lg">Final Reports</button>
 			</div>
 			<div class="col-sm-3"></div>
 		</div>
@@ -372,6 +372,13 @@
   <h3>Life Skills Foundation</h3> 
   <p>ADMIN PAGE</p>
 </div>
+<script >
+	function myfunc()
+
+	{
+		window.location="http://127.0.0.1:9000/learningcurveapp/finalreport"
+	}
+</script>
 
 </body>
 </html>
