@@ -188,6 +188,7 @@
         font-size: 150px;
     }
   }
+ 
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -204,14 +205,163 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        
         <li><a href="#about">PROFILE</a></li>
-        <li><a href="#studreg">Student Registration</a></li>
-        <li><a href="#classassess">Classroom Assessment</a></li>
+		
+		<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+
+		<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+			<div>
+	<label>Student Id</label>
+		<input type="text" name="studentid">
+		</div>
+		
+		<div>
+	<label>Name of Student</label>
+		<input type="text" name="studentname">
+		</div>
+		
+		
+	<div>
+	<label>Gender</label>	
+	<select name="gender" class="text">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>
+	</div>
+		
+		
+		<div>
+	<label>Age</label>
+		<input type="number" name="age">
+		</div>
+
+		<div>
+	<label>Family Type</label>	
+	<select name="familytype" class="text">
+		<option value="Both">Both Parents</option>
+		<option value="single">Single parent</option>
+		<option value="orphan">Orphan</option>
+	</select>
+	</div>
+		
+		<div>
+	<label>Siblings</label>
+		<input type="number" name="siblings">
+		</div>
+		
+		
+	<div>
+	<label>Order Of Birth</label>	
+	<select name="order of birth" class="text">
+		<option value="first born">First born</option>
+		<option value="second born">Second Born</option>
+		<option value="later">later born</option>
+	</select>
+	</div>
+		
+	<div>
+	<label>Parent Education</label>	
+	<select name="parentedu" class="text">
+		<option value="primary">Primary</option>
+		<option value="secondary">Secondary</option>
+		<option value="higher">Higher Secondary</option>
+		<option value="higher">None</option>
+	</select>
+	</div>
+		
+		<div>
+	<label>FamilyIncome</label>
+		<input type="number_format" name="income">
+		</div>
+			<div class="input-group">
+				<button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
+			</div>
+			
+		</div>
+        <div class="modal-footer">
+		
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </li>
+
+		<li><a href="#about">Student</a></li>
+
+		<li>
+		
+  
+  <!-- Trigger the modal with a button -->
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Student</button>
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+
+		<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+			<div class="input-group">
+				<label>Full Name</label>
+				<input type="text" name="username" required>
+			</div>
+			<div class="input-group">
+				<label>Age</label>
+				<input type="number" name="age" required>
+			</div>
+			<div class="input-group">
+				<label>Address</label>
+				<input type="text" name="address" required>
+			</div>
+			<div class="input-group">
+				<label>School</label>
+				<input type="text" name="school" required>
+			</div>
+			<div class="input-group">
+				<label>Contact</label>
+				<input type="number" name="contact" required>
+			</div>
+			<div class="input-group">
+				<button type="submit" name="login" class="butn" onclick="buttonlogin()">login </button>
+			</div>
+			
+		</div>
+        <div class="modal-footer">
+		
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  </li>
+  
+		<li><a href="#classess">Classroom Assessment</a></li>
         <li><a href="#final">Final Reports</a></li>
        
       </ul>
     </div>
   </div>
+  
 </nav>
 <div class="jumbotron text-center">
   <h1>LEARNING CURVE</h1> 
@@ -227,10 +377,8 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -246,7 +394,6 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
