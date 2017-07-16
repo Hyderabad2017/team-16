@@ -1,11 +1,28 @@
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"/>
 
 <div id="container" style="min-width: 310px; height:400px;margin:0 auto"></div>
-
+<button id="showStudent" onClick="getStudentDetails()"/>
 
 <script>
+    function getStudentDetails(){
+     
+        $.ajax({url: "", success: function(result){
+        console.log(result);
+            intialResult = [1, 4 , 3, 2, 1];
+            finalResult = [4,5,2,3,4];
+           func(intialResult, finalResult);
+        }});
+   
+    }
+
+    function func(intialResult, finalResult)
+    {
+        
+        
+    
 Highcharts.chart('container', {
     chart: {
         type: 'column'
@@ -17,11 +34,11 @@ Highcharts.chart('container', {
     xAxis: {
         categories: [
             
-            'self-regulation',
-            'empathy',
-            'self-esteem',
-            'expressitvity',
-            'self awareness'
+            'interaction',
+            'overcoming difficulties and problem solving',
+            'initiative',
+            'conflict management',
+            'understand and follow instructions'
             
         ],
         crosshair: true
@@ -48,14 +65,14 @@ Highcharts.chart('container', {
     },
     series: [{
         name: 'base',
-        data: [1, 4 , 3, 2, 1]
+        data: initialResult
 
     }, {
         name: 'present',
-        data: [5, 3, 5, 4, 0]
+        data: finalResult
 
     }]
-});
+});}
 </script>
 
     <div id="container">
