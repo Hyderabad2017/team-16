@@ -57,10 +57,10 @@ class Teacher(models.Model):
         ('Female', 'Female')
     )
     name = models.CharField(max_length=30)
-    aadhar_id = models.IntegerField()
-    age = models.IntegerField()
-    gender = models.CharField(max_length=25, choices=CHOICES)
-    student = models.ForeignKey(Student)
+    age=models.IntegerField()
+    address=models.TextField()
+    school=models.CharField(max_length=30)
+    password=models.CharField(max_length=30)
 
     def __unicode__(self):
         return unicode(self.name)
