@@ -1,27 +1,10 @@
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"/>
 
-<div id="container" style="min-width: 310px; height:400px;margin:0 auto"></div>
-<button id="showStudent" onClick="getStudentDetails()"/>
-
+<div id="container" style="min-width: 310px; height:400px;margin:0 auto">
 <script>
-    function getStudentDetails(){
-     
-        $.ajax({url: "", success: function(result){
-        console.log(result);
-            intialResult = [1, 4 , 3, 2, 1];
-            finalResult = [4,5,2,3,4];
-           func(intialResult, finalResult);
-        }});
    
-    }
-
-    function func(intialResult, finalResult)
-    {
-        
-        
     
 Highcharts.chart('container', {
     chart: {
@@ -65,14 +48,14 @@ Highcharts.chart('container', {
     },
     series: [{
         name: 'base',
-        data: initialResult
+        data: [1,2,3,2,1]
 
     }, {
         name: 'present',
-        data: finalResult
+        data: [2,4,5,3,3]
 
     }]
-});}
+});
 </script>
 
     <div id="container">
