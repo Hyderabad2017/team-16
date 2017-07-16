@@ -262,26 +262,26 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Enter Student ID</h4>
-        </div>
-        <div class="modal-body">
-			<div class="input-group">
-				
-				<input type="text" name="username" required>
+		  </div>
+		  
+			<div class="model-body">
+				<center>
+					Enter Student ID
+					<input type="text" name="username" required>
+				</center>
 			</div>
-			<div class="input-group" align="center">
-				<button type="submit" name="login" class="butn" onclick="buttongo()" align="center">GO</button>
+			</br>
+			<div  class="model-footer">
+				<center><button type="submit" name="login" class="butn" onclick="buttongo()" align="center">GO</button></center>
 			</div>
+		
 		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
       </div>
       
     </div>
   </div>
   
-</div>
+
 <script>
 function buttongo()
 {
