@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -29,7 +32,7 @@
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }  
+  }
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
@@ -81,7 +84,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e; 
+      border: 1px solid #f4511e;
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -157,7 +160,7 @@
     0% {
       opacity: 0;
       transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       transform: translateY(0%);
@@ -167,7 +170,7 @@
     0% {
       opacity: 0;
       -webkit-transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -198,7 +201,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#myPage">Student Analysis</a>
     </div>
@@ -212,7 +215,7 @@
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -222,27 +225,87 @@
         <div class="modal-body">
             <form action="http://127.0.0.1:9000/learningcurveapp/studentassessment" method="post">
 			<div class="input-group">
-				
+
 				<input type="text" name="id" required>
 			</div>
 			<div class="input-group" align="center">
-				<input type="submit" name="login" class="butn"  align="center">
+				<input type="submit" name="login" class="butn" align="center" id="showStudent" onClick="getStudentDetails()">
 		</div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
          </form>
       </div>
-      
+
     </div>
   </div>
-  
 </div>
+
 <script>
-function buttongo()
-{
-	window.location="http://127.0.0.1:9000/learningcurveapp/bargraph";
-}
+    function getStudentDetails(){
+
+        $.ajax({url: "http://127.0.0.1:9000/learningcurveapp/studentassessment", success: function(result){
+        console.log(result);
+
+           func(intialResult, finalResult);
+        }});
+
+    }
+    function func(intialResult, finalResult)
+    {
+
+
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'student analysis'
+    },
+
+    xAxis: {
+        categories: [
+
+            'interaction',
+            'overcoming difficulties and problem solving',
+            'initiative',
+            'conflict management',
+            'understand and follow instructions'
+
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'score'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'base',
+        data: initialResult
+    }, {
+        name: 'present',
+        data: finalResult
+    }]
+});}
 </script>
 
+    <div id="container">
+</div>
 
