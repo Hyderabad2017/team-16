@@ -93,3 +93,6 @@ def teacherdetails(request):
     template = loader.get_template("learningcurveapp/adminlogin.html")
     return HttpResponse(template.render())
 
+def classroom(request):
+    template = loader.get_template("learningcurveapp/classroom_assess.html")
+    return HttpResponse(template.render())

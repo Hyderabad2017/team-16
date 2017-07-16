@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^studentassessment', views.studentassessment, name='studentassessment'),
     url(r'^studentdetails', views.studentdetails, name='studentdetails'),
     url(r'^finalreport', views.finalreport, name='finalreport'),
-    url(r'^teacherdetails', views.teacherdetails, name='teacherdetails')
+    url(r'^teacherdetails', views.teacherdetails, name='teacherdetails'),
+    url(r'^classroom',views.classroom,name='classroom')
 ]

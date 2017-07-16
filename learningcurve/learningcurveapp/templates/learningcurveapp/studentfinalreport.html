@@ -1,4 +1,4 @@
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
@@ -10,9 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -32,7 +29,7 @@
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }
+  } 
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
@@ -191,6 +188,14 @@
         font-size: 150px;
     }
   }
+  #myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top:20px;
+}
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -201,12 +206,12 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
       </button>
       <a class="navbar-brand" href="#myPage">Student Analysis</a>
     </div>
-	</nav>
-	<div class="container">
+    </nav>
+    <div class="container">
 <h3 align="center" style="color:black">Fill student assessment form here!</h3>
 <br>
   <!-- Trigger the modal with a button -->
@@ -215,7 +220,7 @@
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-
+   
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -223,39 +228,29 @@
           <h4 class="modal-title">Enter Student ID</h4>
         </div>
         <div class="modal-body">
-            <form action="http://127.0.0.1:9000/learningcurveapp/studentassessment" method="post">
-			<div class="input-group">
-
-				<input type="text" name="id" required>
-			</div>
-			<div class="input-group" align="center">
-				<input type="submit" name="login" class="butn" align="center" id="showStudent" onClick="getStudentDetails()">
-		</div>
+            <div class="input-group">
+               
+                <input type="text" name="username" required>
+            </div>
+            <div class="input-group" align="center">
+                <button type="submit" name="login" class="butn" onclick="myFunction()" align="center">GO</button>
+            </div>
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-         </form>
       </div>
-
+     
     </div>
   </div>
-</div>
+  <div id="myDIV">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height:400px;margin:0 auto"></div>
+
 
 <script>
-    function getStudentDetails(){
-
-        $.ajax({url: "http://127.0.0.1:9000/learningcurveapp/studentassessment", success: function(result){
-        console.log(result);
-
-           func(intialResult, finalResult);
-        }});
-
-    }
-    function func(intialResult, finalResult)
-    {
-
-
-
 Highcharts.chart('container', {
     chart: {
         type: 'column'
@@ -263,16 +258,16 @@ Highcharts.chart('container', {
     title: {
         text: 'student analysis'
     },
-
+  
     xAxis: {
         categories: [
-
-            'interaction',
-            'overcoming difficulties and problem solving',
-            'initiative',
-            'conflict management',
-            'understand and follow instructions'
-
+            'interacting with others',
+            'overcoming difficulties',
+            'taking initiative',
+            'managing conflict',
+            'understanding& following instructions',
+            'overall score'
+           
         ],
         crosshair: true
     },
@@ -298,14 +293,33 @@ Highcharts.chart('container', {
     },
     series: [{
         name: 'base',
-        data: initialResult
+        data: [1, 4 , 3, 2, 1,1]
+
     }, {
         name: 'present',
-        data: finalResult
+        data: [5, 3, 5, 4, 0, 5]
+
     }]
-});}
+});
 </script>
 
     <div id="container">
 </div>
 
+
+
+
+
+
+  </div>
+ 
+</div>
+<script>
+var x = document.getElementById('myDIV');
+x.style.display = 'none'
+function myFunction() {
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    }
+    }
+</script>
