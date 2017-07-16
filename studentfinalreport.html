@@ -223,14 +223,14 @@
           <h4 class="modal-title">Enter Student ID</h4>
         </div>
         <div class="modal-body">
-            <form action="http://127.0.0.1:9000/learningcurveapp/studentassessment" method="post">
+            <form action="http://10.49.181.87:9000/learningcurveapp/studentassessment" method="post">
 			<div class="input-group">
 				
 				<input type="text" name="id" required>
 			</div>
 			<div class="input-group" align="center">
-				<input type="submit" name="login" class="butn" align="center">
-		</div>
+				<input type="submit" name="login" class="butn" align="center" id="showStudent" onClick="getStudentDetails()">
+		</div> 
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
@@ -246,10 +246,9 @@
 <script>
     function getStudentDetails(){
      
-        $.ajax({url: "", success: function(result){
+        $.ajax({url: "10.49.181.87:8000", success: function(result){
         console.log(result);
-            intialResult = [1, 4 , 3, 2, 1];
-            finalResult = [4,5,2,3,4];
+          
            func(intialResult, finalResult);
         }});
    
