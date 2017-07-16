@@ -203,16 +203,16 @@
       </button>
       <a class="navbar-brand" href="#myPage">Student Assessment Form</a>
     </div>
-	<div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-	  <li> <a href="#">Studentname</a></li>
-	  <li><a href="#">Student class</a></li>
-	  </ul>
+      <li> <a href="#">Studentname</a></li>
+      <li><a href="#">Student class</a></li>
+      </ul>
     </div>
-	</div>
-	</nav>
-	<br><br>
-	<div class="container">
+    </div>
+    </nav>
+    <br><br>
+    <div class="container">
             
   <table class="table">
     <thead>
@@ -220,208 +220,246 @@
         <th>Field</th>
         <th>Does not yet do</th>
         <th>Does with a lot of help</th>
-		<th>Does with some help</th>
-		<th>Does with a little help</th>
-		<th>Does independently</th>
+        <th>Does with some help</th>
+        <th>Does with a little help</th>
+        <th>Does independently</th>
+        <th>Comments</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-	  <form>
+      <form>
         <td>Interacting With Others</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		</form>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="text" name="comments1">
+            
+        
+        </td>
+        
+        </form>
       </tr>
       <tr>
-	  <form>
+      <form>
         <td>Overcoming difficulties and solving problems</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-	  </form> 
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="text" name="comments2">
+            
+        
+        </td>
+      </form> 
         
       </tr>
       <tr>
-	  <form>
+      <form>
         <td>Taking initiative</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		</form>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="text" name="comments3">
+            
+        
+        </td>
+        </form>
    
       </tr>
-	  <tr>
-	  <form>
+      <tr>
+      <form>
         <td>Managing conflict</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-			</td>
-		
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		</form>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+            </td>
+        
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="text" name="comments4">
+            
+        
+        </td>
+        </form>
    
-      </tr>	
-	  <tr>
-	  <form>
+      </tr>    
+      <tr>
+      <form>
         <td>Understanding and following instrucions</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		</form>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="text" name="comments5">
+            
+        
+        </td>
+        </form>
    
       </tr>
-	  <tr>
-	  <form>
+      <tr>
+      <form>
         <td>overall score</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		<td>
-		
-			<input type="radio" name="optradio">
-		
-		</td>
-		</form>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="radio" name="optradio">
+        
+        </td>
+        <td>
+        
+            <input type="text" name="comments6">
+            
+        
+        </td>
+        </form>
    
       </tr>
     </tbody>
   </table>
-	<div class="input-group">
-		<button type="submit" name="submit" class="butn" onclick="buttonsubmit()">Submit</button>
-	</div>
+    <div class="input-group" align="center  ">
+        <button type="submit" name="submit" class="butn" onclick="buttonsubmit()">Submit</button>
+    </div>
 </div>
 
-	
+    
 <script>
 function buttonreg()
 {
-	window.location="#";
+    window.location="#";
 }
 
 $(document).ready(function(){
